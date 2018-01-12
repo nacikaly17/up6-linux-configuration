@@ -14,13 +14,48 @@ https://github.com/nacikaly17/up6-linux-configuration
 ```
     http://165.227.136.243/
 ```
-### Installed Software and configuration changes made ### 
-```
-* Item Catalog Web Application from github cloned and installed.
-      https://github.com/nacikaly17/nk-catalog.git
-```
 ### A list of  third-party resources ### 
 * PostgreSQL
 * Python2.7
 * Flask
 * Apache2
+
+###  A summary of software installed ### 
+
+*   Get Linux Server Instance server.
+```
+Require a Ubuntu Linux Server Instance from DigitalOcean
+```
+* Secure server
+```
+Change root user password
+Create a new  user grader ( project reviewer ) and secure user access
+Change the SSH port from 22 to 2200
+Activate SSH access 
+Configure the Uncomplicated Firewall (UFW)
+Enable UFW
+Deactivate remote login  for root
+```
+
+* Update and Install Software.
+```
+Update all currently installed packages.
+```
+* Prepare to deploy project.
+```
+  Install python2.7.
+  Install apache2
+  Install and configure PostgreSQL
+```
+* Deploy the Item Catalog project.
+```
+ Clone and setup your Item Catalog project from the Github repository you created earlier in this Nanodegree program.
+Github address for my “Item Catalog”  ( project 4 ) is:
+https://github.com/nacikaly17/nk-catalog.git
+```
+### Summary of configurations ###
+```
+ Configure apache2 web server to run nk-catalog as wsgi application 
+ Run python init_catalog.py to create an initial catalog.db 
+ Making  .git directory as not publicly accessible via a browser
+```
